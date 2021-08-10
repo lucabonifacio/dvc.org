@@ -444,6 +444,11 @@ order of precedence):
 
 Note that Azure remotes can also authenticate via environment variables (instead
 of `dvc remote modify`). These are tried if none of the params above are set.
+Also some options can be propagated from the azure config file (which is managed
+through
+[az config](https://docs.microsoft.com/en-us/cli/azure/config?view=azure-cli-latest)).
+The default directory where the config will be searched is `~/.azure` but it can
+be customized through `AZURE_CONFIG_DIR` variable.
 
 For Azure connection string:
 
